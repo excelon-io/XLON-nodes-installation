@@ -77,7 +77,8 @@ Make sure your node is running and synchronizing by monitoring the console outpu
 
 In order to assure that your Node will always be up and running, even after restarts, you will need to create a service to auto start the Node.
 
-For Ubuntu Linux you should create a file “excelon.service” under the /etc/systemd/system folder with the following content. Be carefull this content is indicative. 
+For Ubuntu Linux you should create a file “excelon.service” under the /etc/systemd/system folder with the following content. 
+!!!!!! Be carefull this content is indicative ad does not apply in all OS and OS Versions !!!!!!
 
     [Unit] 
     Description=Excelon Node 
