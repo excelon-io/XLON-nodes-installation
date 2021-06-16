@@ -134,6 +134,9 @@ Configuration files can be fould here: https://github.com/excelon-io/XLON-nodes-
 You can monitor the Excelon Chain Activity at the Xlon Explorer at https://explorer.excelon.io
 
 
+![Excelon XLON Chain Explorer](https://github.com/excelon-io/XLON-nodes-installation/blob/main/various_assets/excelon_explorer.png)
+
+
 
 # 5)    Running a VALIDATOR NODE?
 
