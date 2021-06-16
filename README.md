@@ -113,4 +113,15 @@ You can also monitor the activity of the journal by typing the command:
 
 
 
+# 4)    NETHERMIND based node installation.
 
+You can lookup nethermind github url for further information at https://openethereum.github.io 
+
+Installation instructions coming soon.
+
+Configuration files can be fould here: https://github.com/excelon-io/XLON-nodes-installation/tree/main/Mainnet/for%20nethermind%20installation
+
+
+# 5)    Running a VALIDATOR NODE?
+
+In order to run a Validator Node you need to contact Excelon Team at info@excelon.io in order to pass through the verification and fit and proper tests for the XLON Chain Validators.
