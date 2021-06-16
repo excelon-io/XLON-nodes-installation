@@ -54,7 +54,7 @@ Go to the Openethereum releases (https://github.com/openethereum/openethereum/re
 
 Unzip it in the same folder
 
-2.3 Download the excelon.json (Genesis file) and the publicnode.toml (node configuration file) in the same folder “excelon" you have prepared before.
+2.3 Download the excelon.json (Genesis file) and the publicnode.toml (node configuration file) in the same folder “excelon" you have prepared before. You can fnd these files here: https://github.com/excelon-io/XLON-nodes-installation/tree/main/Mainnet/for%20openethereum%20installation
 
 If you have followed the folder configuration as discussed earler (/root/excelon) then you should be ready to run the node. If not, you should edit the paths at the publicnode.toml which point to the Path and the toml file.
 
@@ -65,8 +65,8 @@ If you have followed the folder configuration as discussed earler (/root/excelon
 By executing the following commands you can start the node
 
     •	Windows: 	openethereum.exe  --config=excelon
-    •	Linux:	./openethereum --config=excelon
-    •	Mac:	openethereum --config=excelon
+    •	Linux:	    ./openethereum --config=excelon
+    •	Mac:	    openethereum --config=excelon
 
 
 Make sure your node is running and synchronizing by monitoring the console output of the openethereum
@@ -101,10 +101,10 @@ systemctl enable excelon.service
 
 
 You can start, stop, get status and restart the service with the following commands:
-    •	service excelon start
-    •	service excelon stop/status/restart
-    •	service excelon status/restart
-    •	service excelon restart
+    • service excelon start
+    • service excelon stop/status/restart
+    • service excelon status/restart
+    • service excelon restart
 
 
 You can also monitor the activity of the journal by typing the command:
