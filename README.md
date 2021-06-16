@@ -52,11 +52,12 @@ You can lookup openethereum github url for further information at https://openet
 
 Go to the Openethereum releases (https://github.com/openethereum/openethereum/releases) and download the version for your platform in the folder “excelon" you have prepared earlier.
 
-Unzip it in the same folder
+- Unzip it in the same folder
+- CHMOD openethereum 0744 
 
 2.3 Download the excelon.json (Genesis file) and the node.toml (node configuration file) in the same folder “excelon" you have prepared before. You can fnd these files here: https://github.com/excelon-io/XLON-nodes-installation/tree/main/Mainnet/for%20openethereum%20installation
 
-If you have followed the folder configuration as discussed earler (/root/excelon) then you should be ready to run the node. If not, you should edit the paths at the publicnode.toml which point to the Path and the toml file.
+If you have followed the folder configuration as discussed earler (/root/excelon) then you should be ready to run the node. If not, you should edit the paths at the node.toml which point to the Path and the toml file.
 
 
 
@@ -64,9 +65,9 @@ If you have followed the folder configuration as discussed earler (/root/excelon
 
 By executing the following commands you can start the node
 
-    •	Windows: 	openethereum.exe  --config=excelon
-    •	Linux:	    ./openethereum --config=excelon
-    •	Mac:	    openethereum --config=excelon
+    •	Windows: 	openethereum.exe  --config=node.toml
+    •	Linux:	    ./openethereum --config=node.toml
+    •	Mac:	    openethereum --config=node.toml
 
 
 Make sure your node is running and synchronizing by monitoring the console output of the openethereum
@@ -77,8 +78,11 @@ Make sure your node is running and synchronizing by monitoring the console outpu
 
 In order to assure that your Node will always be up and running, even after restarts, you will need to create a service to auto start the Node.
 
-For Ubuntu Linux you should create a file “excelon.service” under the /etc/systemd/system folder with the following content. 
-!!!!!! Be carefull this content is indicative ad does not apply in all OS and OS Versions !!!!!!
+For Ubuntu Linux you should create a file “excelon.service” under the /etc/systemd/system folder with the following content. Please be carefull to use the correct path to openethereum and node.toml location 
+
+Please note that you will need root permissions or run with sudo all the comands
+
+!!!!!! Be carefull this content is indicative and does not apply in all OS and OS Versions !!!!!!
 
     [Unit] 
     Description=Excelon Node 
@@ -102,9 +106,10 @@ systemctl enable excelon.service
 
 
 You can start, stop, get status and restart the service with the following commands:
+
     • service excelon start
-    • service excelon stop/status/restart
-    • service excelon status/restart
+    • service excelon stop
+    • service excelon status
     • service excelon restart
 
 
@@ -121,6 +126,8 @@ You can lookup nethermind github url for further information at https://openethe
 Installation instructions coming soon.
 
 Configuration files can be fould here: https://github.com/excelon-io/XLON-nodes-installation/tree/main/Mainnet/for%20nethermind%20installation
+
+
 
 
 # 5)    Running a VALIDATOR NODE?
