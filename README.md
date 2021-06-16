@@ -46,7 +46,7 @@ Outgoing to any Destination
 You can lookup openethereum github url for further information at https://openethereum.github.io 
 
 
-2.1 Once you have setup your machine and you have console access with proper permissions, create a folder with name “excelon” under the /root folder.
+2.1 Once you have setup your machine and you have console access with proper permissions, create a folder with name “excelon” under the /root folder or any other folder you chose (please keep the path to this folder as you will need to add it in several points of the configuration files below).
 
 2.2 Download the Openethereum release
 
@@ -54,7 +54,7 @@ Go to the Openethereum releases (https://github.com/openethereum/openethereum/re
 
 Unzip it in the same folder
 
-2.3 Download the excelon.json (Genesis file) and the publicnode.toml (node configuration file) in the same folder “excelon" you have prepared before. You can fnd these files here: https://github.com/excelon-io/XLON-nodes-installation/tree/main/Mainnet/for%20openethereum%20installation
+2.3 Download the excelon.json (Genesis file) and the node.toml (node configuration file) in the same folder “excelon" you have prepared before. You can fnd these files here: https://github.com/excelon-io/XLON-nodes-installation/tree/main/Mainnet/for%20openethereum%20installation
 
 If you have followed the folder configuration as discussed earler (/root/excelon) then you should be ready to run the node. If not, you should edit the paths at the publicnode.toml which point to the Path and the toml file.
 
