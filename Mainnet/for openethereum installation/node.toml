@@ -1,0 +1,27 @@
+[parity]
+base_path = "/root/excelon/Excelon"
+chain = "/root/excelon/excelon.json"
+
+[network]
+interface = "0.0.0.0"
+port = 30300
+bootnodes = [
+"enode://038574cde355514ea0b8445d9fbc7feb4ae861503bd27ffdd1569d86ac73fb93f932165ec92a2a3d9d6a6ae272ce7684938fbdda674cfc0b62b7381beaa295a2@boot1.xlon.org:30300",
+"enode://09864237a47a03e79028da3d3243dc9451565903290c5f1edccd8bce962eedda48062056a09575031e7b70fc3d330c145245103bfc1f76094575756e4afc8358@boot5.xlon.org:30300"
+]
+
+[rpc]
+disable = false
+interface = "0.0.0.0"
+port = 8545
+cors = ["*"]
+apis = ["web3", "eth", "net"]
+
+[websockets]
+interface = "0.0.0.0"
+disable = true
+port = 8546
+
+[ipc]
+disable = true
+
